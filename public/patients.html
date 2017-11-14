@@ -29,9 +29,8 @@
         <div id='welcomeB'>
             <div class='row'>
                 <div class='col-md-12'>
-                    <div class='jumbotron text-center' id="topPatients">
-                        <h1>Here to help?</h1>
-                        <h2>Here is a list of patients in your area</h2>
+                    <div class="panel-heading text-center " id='patientsTop'>
+                        <h1>Here is a list of patients in your area</h1>
                     </div>
                 </div>
             </div>
@@ -203,16 +202,8 @@
                 <div class='row'>
 
                 </div>
-                <div class='col-md-12'>
-                    <div class="panel panel-default ">
-                        <div class="panel-heading text-center " id='panBod'><img src="./assets/image/information.png "><br><br>
-                            <h2>Have some questions? We got some answers!</h2>
-                        </div>
-                        <div class="panel-body text-center">
-                            <button type="submit " id='infoBtn' class="btn btn-block btn-lg ">Check out the info section</button>
-                        </div>
-                    </div>
-                </div>
+                <br>
+                <br>
             </div>
         </div>
     </div>
@@ -255,33 +246,57 @@
                     <h1>Information</h1>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
-                    <p>Thanks for coming back!</p>
-                    <p>If you're feelign great and 100% today, click the Good Health button.</p>
-                    <p>Otherwise go ahead and click the buttons where you're not feeling the best. Choose all that apply.</p>
-                    <p>Once you've checked all of your ailments, feel free to leave additional info or comments in the area below.</p>
-                    <p>When you're finished simply click the Submit button and stay close to your phone. We will have a helper reach out shortly!</p>
+                    <p>Welcome to elderHelper!</p>
+                    <p>As a non-profit collaboration team, we are here to bring you the next best tech solution to your elderly health needs.</p>
+                    <p>The main purpose of this application is to help the elderly get the medical help or care they need</p>
+                    <p>You can log-in as a helper or a patient</p>
+                    <p>While logged in as a Helper, you can see a list of current, active patients within 25 miles of your Zip Code. From here, you can
+                        see patient details, and any comments they may have left. Then, simply reach out by phone to offer some help.
+                    </p>
+                    <p>While logged in as a Patient, we will simply ask a short servey to see how you feel. Once you're done with that, you can sit back,
+                        relax, and wait for a reply from a nearby Helper.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal contact -->
     <div class="modal fade" id="conModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header" style="padding:35px 50px;">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h1>Thanks!</h1>
-                </div>
-                <div class="modal-body" style="padding:40px 50px;">
-                    <p>We're glad you've taken the time to let us know how you're feeing today.</p>
-                    <p>Stay close to your phone, one of our helpers will be reaching out today to follow up.</p>
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1>Reach out and say Hi!</h1>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <p>Address: 15303 Dallas Pkwy #180, Addison, TX 75001
+                            <br>
+                                Hours: 
+                                <br>
+                                Monday	7:45AM–4:30PM
+                                <br>
+                                Tuesday	7:45AM–4:30PM
+                                <br>
+                                Wednesday	7:45AM–4:30PM
+                                <br>
+                                Thursday	7:45AM–4:30PM
+                                <br>
+                                Friday	8:30AM–12PM
+                                <br>
+                                Saturday	Closed
+                                <br>
+                                Sunday	Closed
+                                <br>
+                                Suggest an edit
+                                <br>
+                                Phone: (972) 980-5050</p>
+    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- SCRIPTS -->
     <script>

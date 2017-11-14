@@ -25,7 +25,17 @@ a {
     background-color: #54494B;
     background-size: cover;
 }
-
+#patientsTop{
+    color: #f1f7ed;
+    padding: 20px;
+    margin: 15px;
+}
+#feelsTop{
+    color: #f1f7ed;
+    padding: 20px;
+    margin: 15px;
+    font-size: 36px;
+}
 #welcome {
     height: 100vh;
     background-image: url('../image/1.jpg');
