@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>elderHelper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+</head>
+
+<body>
+    <nav class='nav'>
+        <h4 class="navbar-text navbar-left"> <a href="#" class="navbar-link" id="aboutA"><strong>About </strong></a></h4>
+        <h4 class="navbar-text navbar-left"> <a href="#" class="navbar-link" id="Contact"><strong>Contact Us</strong></a></h4>
+    </nav>
+
+    <div class="containter " id="patients">
+
+        <div class="container ">
+            <!-- FIRST ROW -->
+            <br>
+            <div id='row1'>
+                <div class='row'>
+                    <div class='col-md-9'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading " id='panBod'>
+                                <h3>Patient Data</h3>
+                            </div>
+                            <div clas="panel-body">
+                                <h3>stuff n things</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 sidebar-offcanvas" id="sidebar">
+                        <a href="#" id="info"><img src="./assets/image/information.png "></a>
+                    </div>
+                </div>
+            </div>
+            <!-- SECOND ROW -->
+            <div id='row2'>
+                <div class='row'>
+                    <div class='col-md-9'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading" id='panBod'>
+                                <h3>Comments</h3>
+                            </div>
+                            <div clas="panel-body">
+                                <h3>stuff n things</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD ROW -->
+            <div id='row2'>
+                <div class='row'>
+                    <div class='col-md-9'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading " id='panBod'>
+                                <h3>Leave a comment</h3>
+                            </div>
+                            <div class="panel-body text-center ">
+                                <div class="form-group ">
+                                    <textarea class="form-control " id="addCom " rows="4"></textarea>
+                                </div>
+                                <button type="submit " id="adSub " class="btn btn-block ">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THIRD  ROW -->
+            </div>
+            <!-- END CONTAINER -->
+        </div>
+
+    </div>
+    <!--- COULD PUT MODALS ON EACH BODY PART TO HAVE MORE SPECIFIC DETAILS, BUT FOR NOW, IT'S PROBABLY BEST TO STICK WITH 
+        SIMPLICTY. DONT HAVE MUCH TIME. I CAN TAKE THE TIME TO CODE IT OUT, BUT I WILL NEED INFO ON WHAT WE WANT TO HAVE 
+        AS OPTIONS FOR EACH BODY PART OR SECTION. -->
+
+    <!-- Modal INFO-->
+    <div class="modal fade" id="infoModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Information</h1>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <p>Thanks for coming back!</p>
+                    <p>If you're feelign great and 100% today, click the Good Health button.</p>
+                    <p>Otherwise go ahead and click the buttons where you're not feeling the best. Choose all that apply.</p>
+                    <p>Once you've checked all of your ailments, feel free to leave additional info or comments in the area below.</p>
+                    <p>When you're finished simply click the Submit button and stay close to your phone. We will have a helper reach out shortly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal About-->
+    <div class="modal fade" id="aboutModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Information</h1>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <p>Thanks for coming back!</p>
+                    <p>If you're feelign great and 100% today, click the Good Health button.</p>
+                    <p>Otherwise go ahead and click the buttons where you're not feeling the best. Choose all that apply.</p>
+                    <p>Once you've checked all of your ailments, feel free to leave additional info or comments in the area below.</p>
+                    <p>When you're finished simply click the Submit button and stay close to your phone. We will have a helper reach out shortly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal contact -->
+    <div class="modal fade" id="conModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Thanks!</h1>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <p>We're glad you've taken the time to let us know how you're feeing today.</p>
+                    <p>Stay close to your phone, one of our helpers will be reaching out today to follow up.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        $(document).ready(function() {
+            $("#infoBtn").click(function() {
+                $("#infoModal").modal();
+            });
+            $("#aboutA").click(function() {
+                $("#aboutModal").modal();
+            });
+            $("#Contact").click(function() {
+                $("#conModal").modal();
+            });
+            $("#info").click(function() {
+                $("#aboutModal").modal();
+            });
+            $("button ").click(function() {
+                $(this).addClass("active ");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

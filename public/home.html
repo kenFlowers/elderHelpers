@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>elderHelper</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id='welcome'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div class='jumbotron text-center' id="top">
+                    <h1>ElderHelper</h1>
+                    <h2>Welcome to the first thing with stuff thats for your old self.</h2>
+                    <br>
+                    <button type="button" class="btn btn-lg" id="myBtn">Login</button>
+                    <button type="button" class="btn  btn-lg" id="signUpBtn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Welcome Back!</h1>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <div class="checkbox">
+                        <label><input type="checkbox">I'm a Patient</label>
+                        <br>
+                        <label><input type="checkbox">I'm here to help!</label>
+                    </div>
+                    <form role="form">
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder="(123)-555-7777">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw">Password</label>
+                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-block">Log In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1>Tell us a little bit about you!</h1>
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <div class="checkbox">
+                        <label><input type="checkbox">I'm a Patient</label>
+                        <br>
+                        <label><input type="checkbox">I'm here to help!</label>
+                    </div>
+                    <form role="form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="text" class="form-control" id="age" placeholder="70">
+                        </div>
+                        <div class="form-group">
+                            <label>Zip Code</label>
+                            <input type="text" class="form-control" id="zip" placeholder="75254">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder="(123)-555-7777">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" class="form-control" id="passw" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-block">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAGE WRAP -->
+    <!-- END CONTAINER DIV -->
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            });
+            $("#signUpBtn").click(function() {
+                $("#signUpModal").modal();
+            });
+        });
+    </script>
+</body>
+
+</html>

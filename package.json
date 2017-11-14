@@ -1,0 +1,30 @@
+{
+  "name": "elderhelper",
+  "version": "1.0.0",
+  "description": "Application to help elderly give diagnose info to doctor.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenFlowers/elderHelpers.git"
+  },
+  "author": "team 5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenFlowers/elderHelpers/issues"
+  },
+  "homepage": "https://github.com/kenFlowers/elderHelpers#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.0",
+    "sequelize": "^4.22.6"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
