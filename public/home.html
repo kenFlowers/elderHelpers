@@ -4,11 +4,9 @@
 <head>
     <title>elderHelper</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -20,7 +18,7 @@
             <div class='col-md-12 container-fluid'>
                 <div class='jumbotron text-center' id="top">
                     <h1>ElderHelper</h1>
-                    <h2>Welcome to the first thing with stuff thats for your old self.</h2>
+                    <h2>A wellness app made simple.</h2>
                     <br>
                     <button type="button" class="btn btn-lg" id="myBtn">Login</button>
                     <button type="button" class="btn  btn-lg" id="signUpBtn">Sign Up</button>
@@ -39,10 +37,6 @@
                     <h1>Welcome Back!</h1>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">I'm here to help!</label>
-                    </div>
                     <form role="form">
                         <div class="form-group">
                             <label>Phone number</label>
@@ -52,7 +46,10 @@
                             <label for="psw">Password</label>
                             <input type="text" class="form-control" id="psw" placeholder="Enter password">
                         </div>
-                        <button type="submit" class="btn btn-block">Log In</button>
+                        <div class="text-center">
+                            <button type="submit" id='elderLogin' class="btn btn-lg">Log In as Patient</button>
+                            <button type="submit" id='helpLogin' class="btn btn-lg">Log In as Helper</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -85,7 +82,7 @@
                         </div>
                         <div class="form-group">
                             <label>Zip Code</label>
-                            <input type="text" maxlength="5"  class="form-control" id="zip" placeholder="75254">
+                            <input type="text" maxlength="5" class="form-control" id="zip" placeholder="75254">
                         </div>
                         <div class="form-group">
                             <label>Phone number</label>
@@ -104,28 +101,28 @@
     <!-- PAGE WRAP -->
     <!-- END CONTAINER DIV -->
     <script>
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
                 $("#myModal").modal();
             });
-            $("#signUpBtn").click(function () {
+            $("#signUpBtn").click(function() {
                 $("#signUpModal").modal();
             });
 
         });
-        $('#pn').on('keypress', function (event) {
+        $('#pn').on('keypress', function(event) {
             if (event.keyCode < 48 || event.keyCode > 57)
                 return false;
         });
-        $('#pn2').on('keypress', function (event) {
+        $('#pn2').on('keypress', function(event) {
             if (event.keyCode < 48 || event.keyCode > 57)
                 return false;
         });
-        $('#zip').on('keypress', function (event) {
+        $('#zip').on('keypress', function(event) {
             if (event.keyCode < 48 || event.keyCode > 57)
                 return false;
         });
-        $('#age').on('keypress', function (event) {
+        $('#age').on('keypress', function(event) {
             if (event.keyCode < 48 || event.keyCode > 57)
                 return false;
         });
